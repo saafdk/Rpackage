@@ -1,0 +1,45 @@
+---
+title: "TestScript"
+author: "Stanley"
+date: "22/3/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loading the data
+```{r cars}
+data(cats, package="MASS")
+
+source("ols.R")
+
+result<-ols(cbind(1,cats$Bwt),cats$Hwt)
+
+summary(result)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+source("olslinmod.R")
+
+x = cbind(Const=1, Bwt=cats$Bwt)
+y = cats$Hw
+mod1 <- linmod(x, y)
+mod1
+
+# 
+
+summary(mod1)
+```
+
+```{r}
+summary(linmod(Hwt~Bwt*Sex, data=cats))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

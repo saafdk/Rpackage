@@ -1,0 +1,9 @@
+Package: anRpackage
+Type: Package
+Title: Performing linear regression
+Version: 1.0
+Date: 2020-03-22
+Author: Stanley Frederiksen
+Maintainer: Who to complain to <saafdk@gmail.com>
+Description: Making a linear regression and summary
+License: None
