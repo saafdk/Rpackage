@@ -4,6 +4,6 @@ Title: Performing linear regression
 Version: 1.0
 Date: 2020-03-22
 Author: Stanley Frederiksen
-Maintainer: Who to complain to <saafdk@gmail.com>
+Maintainer: Stanley Frederiksen <http://github.com/saafdk/Rpackage>
 Description: Making a linear regression and summary
 License: None
